@@ -1,0 +1,372 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Index page styling */
+body {
+    background: var(--White);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+}
+
+.svg-desktop {
+    display: none;
+}
+
+.svg-mobile {
+    display: block;
+}
+
+form {
+    background: var(--White);
+    padding: 30px;
+}
+
+h1 {
+    color: var(--Dark-Slate-Grey);
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.info-con {
+    display: flex;
+}
+
+p {
+    color: var(--Dark-Slate-Grey);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.update-subhead {
+    margin: 20px 0;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+i {
+    font-size: 20px;
+    color: var(--Tomato);
+    margin-right: 15px;
+}
+
+.email-container {
+    margin-top: 30px;
+}
+
+.email-container div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.email-container div p {
+    color: tomato;
+    font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 20px;
+    border: 1px solid var(--Grey);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--dark-Grey);
+}
+
+
+.subscribe-btn {
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subscribe-btn:active {
+    background: linear-gradient(90deg, var(--Tomato), orange);
+}
+
+.attribution-mobile {
+    display: block; 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 15px;
+}
+
+.attribution-mobile, .attribution-mobile a { 
+    color: var(--Dark-Slate-Grey); 
+}
+
+.attribution-desktop {
+    display: none;
+}
+
+/* Success Page Styling */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--White);
+    padding: 30px;
+    padding-top: 200px;
+}
+
+.success-page-icon {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 34px;
+    margin: 20px 0;
+}
+
+.success-p {
+    font-size: 16px;
+}
+
+.dismiss-btn {
+    display: block;
+    background: var(--Charcoal-Grey);
+    color: var(--White);
+    width: 80%;
+    margin: 0px auto 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dismiss-btn:active {
+    background: linear-gradient(90deg, var(--Tomato), orange);
+}
+
+@media (min-width: 672px) {
+    
+    body {
+        background: var(--Charcoal-Grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: var(--White);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        height: 500px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 480px;
+        width: 40%;
+        margin-left: 20px;
+        border-radius: 25px;
+    }
+
+    .svg-desktop {
+        display: flex;
+    }
+
+    .svg-mobile {
+        display: none;
+    }
+
+    form {
+        background: transparent;
+        text-align: left;
+        height: 480px;
+        width: 60%;
+        padding: 40px 20px;
+        margin: 0;
+    }
+    
+    h1 {
+        color: var(--Dark-Slate-Grey);
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        color: var(--Dark-Slate-Grey);
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .update-subhead {
+        margin: 10px 0;
+    }
+    
+    .info {
+        margin-bottom: 10px;
+    }
+    
+    i {
+        font-size: 20px;
+        color: var(--Tomato);
+        margin-right: 15px;
+    }
+    
+    .email-container {
+        margin-top: 15px;
+    }
+    
+    .email-container div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .email-container p {
+       color: var(--Tomato);
+    }
+    
+    label {
+        flex: 1;
+    }
+    
+    input {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 4px;
+        padding: 20px;
+        border: 1px solid var(--Grey);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    
+    input:focus {
+        outline: none;
+        border-color: var(--dark-Grey);
+    }
+    
+    .subscribe-btn {
+        background: var(--Dark-Slate-Grey);
+        color: var(--White);
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 6px;
+        border: none;
+    }
+    
+    .subscribe-btn:hover {
+        background: linear-gradient(90deg, var(--Tomato), orange);
+    }
+
+    .attribution-desktop {
+        display: block; 
+        font-size: 11px; 
+        text-align: center; 
+        margin-top: 15px;
+    }
+    
+    .attribution-desktop, .attribution-desktop a { 
+        color: var(--White); 
+    }
+    
+    .attribution-mobile {
+        display: none;
+    }
+
+    /* Success Page Styling */
+    .success-container {
+        width: 40%;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-size: 48px;
+        margin: 20px 0;
+    }
+
+    .success-p {
+        font-size: 16px;
+    }
+
+    .dismiss-btn {
+        background: var(--Charcoal-Grey);
+        color: var(--White);
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        position: static;
+    }
+
+    .dismiss-btn:hover {
+        background: linear-gradient(90deg, var(--Tomato), orange);
+    }
+}
+
+@media (min-width: 1112px) {
+
+    .container {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+}
